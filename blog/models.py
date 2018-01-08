@@ -32,7 +32,7 @@ class Tag(models.Model):
         return self.name
 
 # 分类
-class Catagory(models.Model):
+class Category(models.Model):
     name = models.CharField(max_length=30, verbose_name='分类名称')
     index = models.IntegerField(default=999, verbose_name='分类的排序')
 
