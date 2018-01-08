@@ -5,7 +5,7 @@ from django.conf import settings
 logger = logging.getLogger('blog.views')
 
 # Create your views here.
-def global_settings(request):
+def global_setting(request):
     return {'SITE_URL': settings.SITE_URL,
             'SITE_NAME': settings.SITE_NAME,
             'SITE_DESC': settings.SITE_DESC,

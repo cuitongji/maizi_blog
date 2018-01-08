@@ -247,3 +247,253 @@
 2018-01-07 21:55:45,233 [Thread-105:3536] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
 2018-01-07 21:55:45,266 [Thread-106:8904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
 2018-01-07 23:50:04,539 [Thread-136:9836] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-08 11:06:53,282 [Thread-2:4812] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-08 11:06:58,210 [Thread-3:10956] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 23, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 231, in bind_template
+    processors = (template.engine.template_context_processors +
+  File "D:\workspace\maiziblog\lib\site-packages\django\utils\functional.py", line 60, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 90, in template_context_processors
+    return tuple(import_string(path) for path in context_processors)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 90, in <genexpr>
+    return tuple(import_string(path) for path in context_processors)
+  File "D:\workspace\maiziblog\lib\site-packages\django\utils\module_loading.py", line 33, in import_string
+    six.reraise(ImportError, ImportError(msg), sys.exc_info()[2])
+  File "D:\workspace\maiziblog\lib\site-packages\django\utils\module_loading.py", line 29, in import_string
+    return getattr(module, class_name)
+ImportError: Module "blog.views.global_setting" does not define a "global_setting" attribute/class
+2018-01-08 11:06:58,819 [Thread-4:8684] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-08 11:08:59,881 [Thread-2:9332] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 23, in <module>
+    url(r'^$', global_setting, name='global_setting'),
+NameError: name 'global_setting' is not defined
+2018-01-08 11:09:01,956 [Thread-3:9100] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 23, in <module>
+    url(r'^$', global_setting, name='global_setting'),
+NameError: name 'global_setting' is not defined
+2018-01-08 11:09:42,674 [Thread-2:6952] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 23, in <module>
+    url(r'^$', global_setting, name='global_setting'),
+NameError: name 'global_setting' is not defined
+2018-01-08 11:09:51,453 [Thread-3:11192] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 23, in <module>
+    url(r'^$', global_setting, name='global_setting'),
+NameError: name 'global_setting' is not defined
+2018-01-08 11:11:13,819 [Thread-8:8268] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/index.css
+2018-01-08 11:11:13,819 [Thread-7:9920] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/base.css
+2018-01-08 11:11:13,822 [Thread-9:10064] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2018-01-08 11:11:13,825 [Thread-10:3732] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:11:13,828 [Thread-11:10940] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:11:13,861 [Thread-12:9380] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2018-01-08 11:11:13,865 [Thread-13:10884] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:11:13,867 [Thread-14:8512] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2018-01-08 11:11:13,868 [Thread-15:10856] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2018-01-08 11:11:16,365 [Thread-17:10480] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/base.css
+2018-01-08 11:11:16,372 [Thread-18:9912] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/index.css
+2018-01-08 11:11:16,374 [Thread-20:10160] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:11:16,375 [Thread-19:8856] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2018-01-08 11:11:16,377 [Thread-21:9768] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:11:16,413 [Thread-22:9420] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2018-01-08 11:11:16,414 [Thread-23:8660] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:11:16,431 [Thread-24:10180] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:11:16,434 [Thread-25:10176] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:11:16,441 [Thread-26:8364] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2018-01-08 11:11:16,444 [Thread-27:9776] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2018-01-08 11:11:16,474 [Thread-28:9228] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2018-01-08 11:11:17,757 [Thread-30:9056] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/base.css
+2018-01-08 11:11:17,759 [Thread-31:8428] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/index.css
+2018-01-08 11:11:17,759 [Thread-32:10548] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2018-01-08 11:11:17,759 [Thread-33:10476] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:11:17,759 [Thread-34:9264] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:11:17,803 [Thread-35:9752] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2018-01-08 11:11:17,805 [Thread-36:9332] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:11:17,805 [Thread-37:11072] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2018-01-08 11:11:17,809 [Thread-38:10088] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2018-01-08 11:16:23,315 [Thread-40:8620] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/base.css
+2018-01-08 11:16:23,321 [Thread-41:8420] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/index.css
+2018-01-08 11:16:23,321 [Thread-44:1648] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:16:23,321 [Thread-43:6092] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:16:23,322 [Thread-42:2848] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2018-01-08 11:16:23,375 [Thread-45:8700] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:16:23,377 [Thread-46:10936] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:16:23,401 [Thread-47:10228] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:16:23,401 [Thread-48:11252] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2018-01-08 11:16:23,401 [Thread-49:11060] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2018-01-08 11:16:23,421 [Thread-50:9688] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:16:25,617 [Thread-52:8712] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/base.css
+2018-01-08 11:16:25,622 [Thread-56:10392] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:16:25,624 [Thread-55:10956] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:16:25,622 [Thread-53:9252] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/index.css
+2018-01-08 11:16:25,625 [Thread-54:9164] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2018-01-08 11:16:25,664 [Thread-57:11076] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:16:25,664 [Thread-58:9468] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:16:25,678 [Thread-59:9864] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2018-01-08 11:16:25,680 [Thread-60:9700] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:16:25,683 [Thread-61:8284] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2018-01-08 11:16:25,704 [Thread-62:10408] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:16:25,706 [Thread-63:1084] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2018-01-08 11:16:27,003 [Thread-65:11032] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/base.css
+2018-01-08 11:16:27,012 [Thread-69:8088] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:16:27,012 [Thread-68:11236] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:16:27,013 [Thread-66:9196] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/index.css
+2018-01-08 11:16:27,013 [Thread-67:10992] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2018-01-08 11:16:27,046 [Thread-70:11028] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:16:27,046 [Thread-71:10968] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:16:27,062 [Thread-72:10628] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:16:27,065 [Thread-73:10404] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2018-01-08 11:16:27,065 [Thread-74:7320] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2018-01-08 11:16:27,085 [Thread-75:7660] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:20:17,586 [Thread-76:8832] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/base.css
+2018-01-08 11:20:17,589 [Thread-77:5888] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/index.css
+2018-01-08 11:20:17,592 [Thread-79:10116] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:20:17,592 [Thread-78:7648] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2018-01-08 11:20:19,596 [Thread-81:10380] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/base.css
+2018-01-08 11:20:19,598 [Thread-82:9036] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/index.css
+2018-01-08 11:20:19,601 [Thread-83:4396] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2018-01-08 11:20:19,601 [Thread-84:9704] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:20:19,601 [Thread-85:8620] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:20:19,638 [Thread-86:2848] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:20:19,641 [Thread-87:8700] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2018-01-08 11:20:19,644 [Thread-88:10936] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2018-01-08 11:20:21,566 [Thread-91:10480] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/index.css
+2018-01-08 11:20:21,568 [Thread-92:6036] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2018-01-08 11:20:21,569 [Thread-90:9688] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/base.css
+2018-01-08 11:20:21,569 [Thread-94:9968] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:20:21,569 [Thread-93:10880] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:20:21,605 [Thread-95:10224] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:20:21,611 [Thread-96:10624] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:20:21,611 [Thread-97:9952] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2018-01-08 11:20:21,614 [Thread-98:9696] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2018-01-08 11:20:21,635 [Thread-99:7560] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:20:22,845 [Thread-101:10112] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/base.css
+2018-01-08 11:20:22,851 [Thread-105:8712] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:20:22,851 [Thread-104:6952] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:20:22,851 [Thread-103:8816] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2018-01-08 11:20:22,852 [Thread-102:4340] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/index.css
+2018-01-08 11:20:22,887 [Thread-106:9164] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:20:22,888 [Thread-107:11076] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:20:22,904 [Thread-108:9468] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:20:22,904 [Thread-109:8840] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2018-01-08 11:20:22,904 [Thread-110:9940] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2018-01-08 11:20:22,926 [Thread-111:9864] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:20:30,029 [Thread-113:7432] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/base.css
+2018-01-08 11:20:30,033 [Thread-116:10820] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:20:30,035 [Thread-115:10176] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2018-01-08 11:20:30,035 [Thread-117:10028] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:20:30,035 [Thread-114:10120] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/index.css
+2018-01-08 11:20:30,086 [Thread-119:11200] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:20:30,101 [Thread-120:10504] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:20:30,108 [Thread-121:8996] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:20:30,109 [Thread-122:10716] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2018-01-08 11:20:30,111 [Thread-123:8488] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2018-01-08 11:20:30,147 [Thread-125:9924] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:20:45,414 [Thread-127:8268] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/base.css
+2018-01-08 11:20:45,415 [Thread-129:8576] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2018-01-08 11:20:45,417 [Thread-128:9476] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/index.css
+2018-01-08 11:20:45,417 [Thread-131:9452] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:20:45,417 [Thread-130:9444] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:20:45,453 [Thread-132:10872] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:20:45,461 [Thread-133:10800] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:20:45,461 [Thread-134:8988] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2018-01-08 11:20:45,463 [Thread-135:5900] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2018-01-08 11:20:45,503 [Thread-136:8204] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:20:47,180 [Thread-138:9912] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/base.css
+2018-01-08 11:20:47,188 [Thread-140:8856] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2018-01-08 11:20:47,188 [Thread-139:10160] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/index.css
+2018-01-08 11:20:47,188 [Thread-141:10248] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:20:47,188 [Thread-142:10896] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:20:47,223 [Thread-143:9800] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2018-01-08 11:20:47,226 [Thread-144:2028] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2018-01-08 11:20:47,227 [Thread-145:8092] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2018-01-08 11:24:18,506 [Thread-147:7104] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/base.css
+2018-01-08 11:24:18,513 [Thread-148:11200] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/index.css
+2018-01-08 11:24:18,513 [Thread-149:8956] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2018-01-08 11:24:18,513 [Thread-151:9708] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:24:18,513 [Thread-150:10144] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/sliders.js
+2018-01-08 11:24:18,571 [Thread-152:8488] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:24:18,588 [Thread-153:11012] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2018-01-08 11:27:15,071 [Thread-157:10008] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:27:15,780 [Thread-158:9876] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:28:28,490 [Thread-161:8604] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:28:28,533 [Thread-162:8416] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:28:30,769 [Thread-164:9436] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:28:30,812 [Thread-165:8372] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:28:32,061 [Thread-167:4920] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:28:32,107 [Thread-168:9688] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:28:33,229 [Thread-170:8988] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:28:33,269 [Thread-171:9452] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:28:34,210 [Thread-173:8092] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:28:34,256 [Thread-174:9912] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:29:30,305 [Thread-179:8128] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:29:30,355 [Thread-180:9356] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:29:32,301 [Thread-182:8320] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:29:32,344 [Thread-183:6640] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:29:33,911 [Thread-185:10100] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:29:33,950 [Thread-186:11032] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:29:53,029 [Thread-191:6848] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:29:53,075 [Thread-192:6032] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:29:54,542 [Thread-194:9352] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:29:54,586 [Thread-195:9208] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:32:19,788 [Thread-201:10144] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:32:19,832 [Thread-202:9416] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:34:32,157 [Thread-207:9628] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-08 11:34:32,203 [Thread-208:9412] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
