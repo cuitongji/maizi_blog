@@ -550,3 +550,5 @@ NameError: name 'global_setting' is not defined
 2018-01-08 12:20:26,710 [Thread-61:8672] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
 2018-01-08 12:21:30,934 [Thread-63:496] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
 2018-01-08 20:38:16,911 [Thread-3:7908] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 01:33:54,209 [Thread-2:9620] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-09 01:33:56,125 [Thread-11:13296] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
