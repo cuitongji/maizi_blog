@@ -555,3 +555,489 @@ NameError: name 'global_setting' is not defined
 2018-01-09 13:14:23,884 [Thread-7:8536] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
 2018-01-09 13:14:24,903 [Thread-12:10164] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
 2018-01-09 13:14:25,075 [Thread-26:8772] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-09 14:02:02,155 [Thread-7:7284] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:09:52,855 [Thread-8:10772] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named urls
+2018-01-09 15:11:16,354 [Thread-9:7404] [django.request:170] [base:get_response] [WARNING]- Not Found: /
+2018-01-09 15:17:14,170 [Thread-9:6956] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:17:14,234 [Thread-11:5024] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:17:35,456 [Thread-9:10696] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:17:35,526 [Thread-11:3352] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:17:42,467 [Thread-34:8236] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:17:42,494 [Thread-36:8172] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:24:20,525 [Thread-38:8680] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 23, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 212, in do_extends
+    raise TemplateSyntaxError("'%s' cannot appear more than once in the same template" % bits[0])
+TemplateSyntaxError: 'extends' cannot appear more than once in the same template
+2018-01-09 15:27:11,240 [Thread-39:10676] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 23, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 212, in do_extends
+    raise TemplateSyntaxError("'%s' cannot appear more than once in the same template" % bits[0])
+TemplateSyntaxError: 'extends' cannot appear more than once in the same template
+2018-01-09 15:28:26,375 [Thread-40:6772] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 23, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 212, in do_extends
+    raise TemplateSyntaxError("'%s' cannot appear more than once in the same template" % bits[0])
+TemplateSyntaxError: 'extends' cannot appear more than once in the same template
+2018-01-09 15:29:56,655 [Thread-41:4124] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 23, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 212, in do_extends
+    raise TemplateSyntaxError("'%s' cannot appear more than once in the same template" % bits[0])
+TemplateSyntaxError: 'extends' cannot appear more than once in the same template
+2018-01-09 15:30:05,194 [Thread-49:10380] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:30:05,299 [Thread-51:9412] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:42:30,338 [Thread-25:9168] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 24, in index
+    return render(request, 'index.html', {'cagegory_list': category_list}, locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 89, in render
+    using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 116, in render_to_string
+    template_name, context, context_instance, dirs, dictionary)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 220, in render_to_string
+    with context_instance.push(context):
+AttributeError: 'dict' object has no attribute 'push'
+2018-01-09 15:44:25,829 [Thread-2:6720] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 24, in index
+    return render(request, 'index.html', {'cagegory_list': category_list})
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 113, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 110, in get_parent
+    return context.template.engine.get_template(parent)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 348, in parse
+    self.unclosed_block_tag(parse_until)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\debug.py", line 65, in unclosed_block_tag
+    raise self.source_error(source, msg)
+TemplateSyntaxError: Unclosed tag 'for'. Looking for one of: empty, endfor 
+2018-01-09 15:45:54,170 [Thread-10:11044] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:45:54,275 [Thread-12:7164] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:48:08,887 [Thread-81:10924] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:48:08,944 [Thread-82:6356] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:48:13,397 [Thread-107:4196] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:48:13,486 [Thread-110:10056] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:48:16,292 [Thread-135:10424] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:48:16,384 [Thread-137:11244] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:48:30,903 [Thread-170:11156] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:48:31,007 [Thread-173:7460] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:48:32,811 [Thread-198:6448] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:48:32,898 [Thread-201:11176] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:49:00,897 [Thread-228:8500] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:49:00,990 [Thread-231:6956] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:49:03,638 [Thread-256:4196] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:49:03,723 [Thread-258:10636] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:52:12,496 [Thread-394:8608] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:52:12,529 [Thread-396:5208] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:52:15,618 [Thread-421:10428] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:52:15,653 [Thread-423:5452] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:52:17,904 [Thread-448:10468] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 15:52:17,938 [Thread-450:6976] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:00:46,934 [Thread-476:10408] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:00:46,969 [Thread-478:9268] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:00:50,453 [Thread-503:11176] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:00:50,486 [Thread-505:10648] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:01:28,209 [Thread-530:7736] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:01:28,240 [Thread-532:9196] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:03:15,165 [Thread-552:8376] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 24, in index
+    return render(request, 'index.html', {'cagegory_list': category_list})
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 113, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 110, in get_parent
+    return context.template.engine.get_template(parent)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'category', expected 'empty' or 'endfor'
+2018-01-09 16:03:38,177 [Thread-553:11180] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 24, in index
+    return render(request, 'index.html', {'cagegory_list': category_list})
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 113, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 110, in get_parent
+    return context.template.engine.get_template(parent)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'category.name', expected 'empty' or 'endfor'
+2018-01-09 16:04:17,565 [Thread-561:11184] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:04:17,605 [Thread-567:10816] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:04:21,119 [Thread-588:11160] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:04:21,153 [Thread-590:11236] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:04:28,368 [Thread-616:10180] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:04:28,401 [Thread-618:6956] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:04:30,733 [Thread-643:2156] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:04:30,770 [Thread-645:10128] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:04:46,362 [Thread-671:10508] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:04:46,398 [Thread-673:6732] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:04:48,427 [Thread-698:9300] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:04:48,460 [Thread-700:8468] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:06:05,910 [Thread-733:11120] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:06:05,990 [Thread-736:8156] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:06:57,368 [Thread-762:10736] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:06:57,464 [Thread-765:10972] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:06:59,724 [Thread-790:9496] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:06:59,782 [Thread-792:10804] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:07:53,489 [Thread-817:6720] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:07:53,588 [Thread-820:8500] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:03,934 [Thread-845:10176] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:04,029 [Thread-847:10928] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:04,730 [Thread-872:5064] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:04,831 [Thread-875:10512] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:05,426 [Thread-900:3528] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:05,572 [Thread-908:10560] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:05,632 [Thread-910:10692] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:05,992 [Thread-936:5272] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:06,046 [Thread-939:8292] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:06,410 [Thread-965:11184] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:06,500 [Thread-973:7796] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:06,650 [Thread-982:8736] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:06,744 [Thread-986:8556] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:07,292 [Thread-1011:10616] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:07,361 [Thread-1013:10388] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:07,730 [Thread-1039:9196] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:07,884 [Thread-1047:4188] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:08,039 [Thread-1055:5064] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:08:08,164 [Thread-1058:10512] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:13:37,404 [Thread-34:10520] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:13:37,480 [Thread-37:11144] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:13:39,658 [Thread-62:10596] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:13:39,717 [Thread-63:4044] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:13:54,753 [Thread-82:5208] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-09 16:13:56,529 [Thread-86:10976] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:13:57,118 [Thread-88:4592] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-09 16:14:07,338 [Thread-100:10216] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:14:22,476 [Thread-5:9348] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:14:22,513 [Thread-7:8544] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:14:23,875 [Thread-11:9856] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:14:24,808 [Thread-15:7092] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:14:24,822 [Thread-17:7636] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 16:59:58,865 [Thread-27:11072] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 17:00:19,937 [Thread-33:5464] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 17:01:11,822 [Thread-37:8552] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 17:02:25,112 [Thread-43:4184] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 17:04:23,046 [Thread-3:10132] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 17:18:16,361 [Thread-4:11656] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 20, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 21
+SyntaxError: Non-ASCII character '\xe5' in file D:\workspace\blog_project\blog\views.py on line 21, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+2018-01-09 20:10:22,806 [Thread-5:4924] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 20, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 21
+SyntaxError: Non-ASCII character '\xe5' in file D:\workspace\blog_project\blog\views.py on line 21, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+2018-01-09 20:10:25,015 [Thread-6:11384] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 20, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 21
+SyntaxError: Non-ASCII character '\xe5' in file D:\workspace\blog_project\blog\views.py on line 21, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+2018-01-09 20:10:26,392 [Thread-7:9260] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 20, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 21
+SyntaxError: Non-ASCII character '\xe5' in file D:\workspace\blog_project\blog\views.py on line 21, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+2018-01-09 20:11:06,236 [Thread-12:12204] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 20:45:58,911 [Thread-3:8700] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 20:46:00,454 [Thread-5:400] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 20:46:05,237 [Thread-7:4592] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 20:46:23,444 [Thread-12:13200] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 20:46:24,444 [Thread-14:2388] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 20:47:53,473 [Thread-18:3696] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 20:47:55,003 [Thread-20:7376] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 20:48:27,068 [Thread-3:10920] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 20:49:52,898 [Thread-25:8592] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 20:49:54,059 [Thread-27:12808] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 20:49:54,947 [Thread-29:13000] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 20:49:56,019 [Thread-31:12812] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:04:19,816 [Thread-78:11724] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:04:25,197 [Thread-80:12264] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:04:26,098 [Thread-82:3544] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:04:28,681 [Thread-84:11752] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:08:03,417 [Thread-87:12512] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:08:04,549 [Thread-89:10572] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:08:05,446 [Thread-91:11180] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:08:11,701 [Thread-93:9476] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:08:13,826 [Thread-95:5432] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:13:51,016 [Thread-97:11792] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:14:40,354 [Thread-3:8628] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:14:42,065 [Thread-5:11516] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:15:47,857 [Thread-7:7856] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:16:06,138 [Thread-9:13096] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:17:13,605 [Thread-11:8132] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:20:37,575 [Thread-13:8292] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:20:39,375 [Thread-15:12700] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:20:40,638 [Thread-17:7216] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:20:55,480 [Thread-20:12408] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:20:56,565 [Thread-22:7804] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:21:13,015 [Thread-3:7204] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:21:15,170 [Thread-5:12480] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-09 21:21:16,372 [Thread-7:11732] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
