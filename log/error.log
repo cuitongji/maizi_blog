@@ -73,3 +73,4 @@
 2018-01-08 12:20:26,598 [Thread-48:9372] [blog.views:22] [views:index] [ERROR]- [Errno 2] No such file or directory: 'sss.txt'
 2018-01-08 12:21:30,891 [Thread-62:6448] [blog.views:22] [views:index] [ERROR]- [Errno 2] No such file or directory: 'sss.txt'
 2018-01-08 20:38:16,835 [Thread-2:9224] [blog.views:22] [views:index] [ERROR]- [Errno 2] No such file or directory: 'sss.txt'
+2018-01-09 13:14:23,713 [Thread-2:6328] [blog.views:22] [views:index] [ERROR]- [Errno 2] No such file or directory: 'sss.txt'
