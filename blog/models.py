@@ -44,6 +44,16 @@ class Category(models.Model):
     def __unicode__(self):
         return self.name
 
+class ArticleManager(models.Manager):
+    def distinct_date(self):
+        distinct_date_list = []
+        date_list = self.values('date_publish')
+        for date in date_list:
+            date = date['date_publish'].strftime('%Y/%m文章存档')
+            if date not in distinct_date_list:
+                distinct_date_list.append(date)
+        return distinct_date_list
+
 # 文章模型
 class Article(models.Model):
     title = models.CharField(max_length=50, verbose_name='文章标题')
