@@ -3,11 +3,11 @@
 {% block left_content %}
 {% include 'ad.html' %}
 <div class="topnews">
-    <h2>文章归档</h2>
+    <h2>最新文章</h2>
     {% for article in article_list %}
     <div class="blogs">
         <ul>
-            <h3><a href="/">{{ article.title }}</a></h3>
+            <h3><a href="{% url 'article' %}?id={{ article.id }}">{{ article.title }}</a></h3>
             <p>{{ article.desc }}</p>
             <p class="autor">
                 <span class="lm f_l">

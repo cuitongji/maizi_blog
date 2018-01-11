@@ -7,7 +7,7 @@
         {% for article in article_list %}
             <div class="blogs">
                 <ul>
-                    <h3><a href="/">{{ article.title }}</a></h3>
+                    <h3><a href="{% url 'article' %}?id={{ article.id }}">{{ article.title }}</a></h3>
                     <p>{{ article.desc }}</p>
                     <p class="autor">
                         <span class="lm f_l">
