@@ -3846,3 +3846,89 @@ NoReverseMatch: Reverse for '/' with arguments '()' and keyword arguments '{}' n
 2018-01-11 16:07:45,515 [Thread-34:10748] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
 2018-01-11 16:07:46,165 [Thread-36:10284] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
 2018-01-11 16:07:46,200 [Thread-37:10744] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-11 16:07:59,635 [Thread-7:7648] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-11 16:08:00,316 [Thread-30:10316] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-11 16:08:04,713 [Thread-49:10344] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-11 16:08:04,747 [Thread-50:11048] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-11 16:08:06,898 [Thread-52:6740] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-11 16:08:06,934 [Thread-53:9832] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-11 16:08:08,799 [Thread-55:9688] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-11 16:08:08,835 [Thread-56:9248] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-11 16:08:10,496 [Thread-58:9400] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-11 16:08:10,529 [Thread-59:10720] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-11 16:09:07,594 [Thread-62:3340] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-11 16:09:07,631 [Thread-63:10832] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-11 16:09:09,243 [Thread-65:9628] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-11 16:09:09,280 [Thread-66:10092] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-11 16:09:14,084 [Thread-70:10584] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-11 16:09:15,686 [Thread-68:10720] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-11 16:09:15,723 [Thread-72:10856] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-11 16:09:17,957 [Thread-73:6248] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-11 16:09:17,990 [Thread-74:8556] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-11 16:43:22,293 [Thread-77:10640] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-11 16:43:23,226 [Thread-79:10832] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-11 16:43:23,352 [Thread-80:7036] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-11 16:43:26,229 [Thread-82:10772] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-11 17:14:09,872 [Thread-2:10768] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 39, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 24, in global_setting
+    comment_count_list = Comment.objects.values('article').annotate(comment_count = Count('article')).order_by('-comment_count')
+NameError: global name 'Count' is not defined
+2018-01-11 17:16:35,730 [Thread-3:6288] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 39, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 24, in global_setting
+    comment_count_list = Comment.objects.values('article').annotate(comment_count = Count('article')).order_by('-comment_count')
+NameError: global name 'Count' is not defined
+2018-01-11 17:16:37,032 [Thread-4:7064] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 39, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 24, in global_setting
+    comment_count_list = Comment.objects.values('article').annotate(comment_count = Count('article')).order_by('-comment_count')
+NameError: global name 'Count' is not defined

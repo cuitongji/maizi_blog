@@ -4,11 +4,15 @@ from django.shortcuts import render
 from django.conf import settings
 from django.core.paginator import Paginator, InvalidPage,EmptyPage, PageNotAnInteger
 from django.db import connection
+from django.db.models import Count
 from models import *
 
 logger = logging.getLogger('blog.views')
 
 def global_setting(request):
+    # 站点基本信息
+    SITE_NAME = settings.SITE_NAME
+    SITE_DESC = settings.SITE_DESC
     # 分类信息获取（导航数据）
     category_list = Category.objects.all()
     # 文章归档数据
@@ -16,16 +20,11 @@ def global_setting(request):
     # 广告数据(同学们自己完成)
     # 标签云数据
     # 友情链接数据
-    return {'category_list': category_list,
-            'archive_list': archive_list,
-            'SITE_URL': settings.SITE_URL,
-            'SITE_NAME': settings.SITE_NAME,
-            'SITE_DESC': settings.SITE_DESC,
-            'WEIBO_SINA': settings.WEIBO_SINA,
-            'WEIBO_TENCENT': settings.WEIBO_TENCENT,
-            'PRO_RSS': settings.PRO_RSS,
-            'PRO_EMAIL': settings.PRO_EMAIL,
-    }
+    # 文章排行榜
+    # 评论排行
+    comment_count_list = Comment.objects.values('article').annotate(comment_count = Count('article')).order_by('-comment_count')
+    article_comment_list =  [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+    return locals()
 
 def index(request):
     try:
