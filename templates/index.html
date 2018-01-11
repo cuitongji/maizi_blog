@@ -1,11 +1,9 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block left_content %}
-
 {% include 'ad.html' %}
-
 <div class="topnews">
-    <h2>最新文章</h2>
+    <h2>文章归档</h2>
     {% for article in article_list %}
     <div class="blogs">
         <ul>
@@ -25,8 +23,6 @@
     </div>
     {% endfor %}
 </div>
-
-
 {% include 'pagination.html' %}
 
 {% endblock left_content %}

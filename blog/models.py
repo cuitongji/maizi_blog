@@ -66,6 +66,8 @@ class Article(models.Model):
     category = models.ForeignKey(Category, blank=True, null=True, verbose_name='分类')
     tag = models.ManyToManyField(Tag, verbose_name='标签')
 
+    objects = ArticleManager()
+
     class Meta:
         verbose_name = '文章'
         verbose_name_plural = verbose_name
