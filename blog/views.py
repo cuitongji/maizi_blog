@@ -26,9 +26,15 @@ def global_setting(request):
     # 标签云数据
     # 友情链接数据
     # 文章排行榜
+    # 浏览排行
+    browse_count_list = Article.objects.values('click_count').annotate(browse_count = Count('click_count')).order_by('-browse_count')
+    # article_browse_list =  [Article.objects.get(pk=) for article in browse_count_list]
     # 评论排行
     comment_count_list = Comment.objects.values('article').annotate(comment_count = Count('article')).order_by('-comment_count')
     article_comment_list =  [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+    # 站长推荐
+    # recommend_count_list = Article.objects.values('is_recommend').annotate(recommend_count = Count('is_recommend')).order_by('-recommend_count')
+    # article_recommend_list =  [Article.objects.get(pk=article['is_recommend']) for article in recommend_count_list]
     return locals()
 
 def index(request):
@@ -128,7 +134,7 @@ def comment_post(request):
 # 注销
 def do_logout(request):
     try:
-        pass
+        logout(request)
     except Exception as e:
         print e
         logger.error(e)

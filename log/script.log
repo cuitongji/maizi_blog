@@ -4873,3 +4873,1013 @@ TemplateDoesNotExist: article_bak.html
 2018-01-12 01:10:21,798 [Thread-32:14536] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
 2018-01-12 01:10:24,404 [Thread-34:14180] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
 2018-01-12 01:10:25,467 [Thread-36:14280] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 13:23:44,053 [Thread-3:5480] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 13:23:44,247 [Thread-4:8848] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-12 13:23:46,651 [Thread-6:3084] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 14:20:54,825 [Thread-3:9816] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 14:20:56,255 [Thread-5:9324] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 14:38:23,437 [Thread-11:8328] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 14:38:24,766 [Thread-13:5872] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 14:38:25,533 [Thread-15:8476] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 14:38:26,313 [Thread-17:9564] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 14:38:27,040 [Thread-19:6920] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 14:38:27,803 [Thread-21:9228] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 14:38:32,796 [Thread-23:9888] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 14:38:36,506 [Thread-25:9968] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 14:38:47,450 [Thread-28:8900] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 14:39:26,910 [Thread-30:8272] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 14:39:27,983 [Thread-32:9864] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 14:39:29,102 [Thread-34:9868] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 14:39:33,085 [Thread-36:9828] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 14:39:37,809 [Thread-39:2844] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 14:39:38,619 [Thread-42:8852] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 14:40:36,859 [Thread-43:9300] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-12 14:40:38,038 [Thread-44:3432] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /logout
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 135, in do_logout
+    return redirect(request.META['HTTP_REFERER'])
+KeyError: 'HTTP_REFERER'
+2018-01-12 14:41:12,687 [Thread-53:9272] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 15:38:52,815 [Thread-56:9288] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 15:39:04,323 [Thread-59:9500] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 15:39:05,611 [Thread-62:10204] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 15:40:06,834 [Thread-65:8688] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 15:40:07,607 [Thread-68:1252] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 15:40:08,401 [Thread-71:8824] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 15:41:33,628 [Thread-3:9980] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 15:41:35,726 [Thread-6:8340] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 15:41:39,437 [Thread-8:8288] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 15:41:41,513 [Thread-10:1600] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 15:41:57,361 [Thread-17:8748] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 15:44:58,486 [Thread-19:5944] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 15:45:00,140 [Thread-21:4040] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 15:45:07,211 [Thread-23:1088] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 15:45:11,142 [Thread-24:6872] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-12 15:45:34,510 [Thread-27:5112] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-12 15:46:17,292 [Thread-57:10140] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 15:46:18,880 [Thread-58:3716] [django.request:170] [base:get_response] [WARNING]- Not Found: /index.html
+2018-01-12 15:46:32,592 [Thread-60:9676] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 15:55:57,674 [Thread-153:2664] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 15:55:58,469 [Thread-155:3820] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 15:55:59,316 [Thread-157:9900] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 16:01:40,006 [Thread-3:7428] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 16:01:44,427 [Thread-5:1040] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-12 16:01:48,976 [Thread-7:10112] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 16:01:50,667 [Thread-9:10148] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 16:50:55,440 [Thread-2:3432] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 47, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 30, in global_setting
+    browse_count_list = Article.objects.values('click_count').annotate(browse_count = Count('article')).order_by('-browse_count')
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 794, in annotate
+    obj.query.add_annotation(annotation, alias, is_summary=False)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\query.py", line 977, in add_annotation
+    summarize=is_summary)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\aggregates.py", line 20, in resolve_expression
+    c = super(Aggregate, self).resolve_expression(query, allow_joins, reuse, summarize)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\expressions.py", line 491, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\expressions.py", line 448, in resolve_expression
+    return query.resolve_ref(self.name, allow_joins, reuse, summarize)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\query.py", line 1527, in resolve_ref
+    self.get_initial_alias(), reuse)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\query.py", line 1466, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\query.py", line 1391, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'article' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-01-12 16:54:02,066 [Thread-2:8828] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 47, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 31, in global_setting
+    article_browse_list =  [Article.objects.get(pk=article['click_count']) for browse in browse_count_list]
+TypeError: 'function' object has no attribute '__getitem__'
+2018-01-12 16:54:03,568 [Thread-3:8408] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 47, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 31, in global_setting
+    article_browse_list =  [Article.objects.get(pk=article['click_count']) for browse in browse_count_list]
+TypeError: 'function' object has no attribute '__getitem__'
+2018-01-12 16:57:46,934 [Thread-2:8968] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 47, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 31, in global_setting
+    article_browse_list =  [Article.objects.get(pk=article['click_count']) for article in browse_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+2018-01-12 16:57:49,446 [Thread-3:2236] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 47, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 31, in global_setting
+    article_browse_list =  [Article.objects.get(pk=article['click_count']) for article in browse_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+2018-01-12 16:57:51,196 [Thread-4:9636] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 47, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 31, in global_setting
+    article_browse_list =  [Article.objects.get(pk=article['click_count']) for article in browse_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+2018-01-12 16:57:53,661 [Thread-5:5944] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 47, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 31, in global_setting
+    article_browse_list =  [Article.objects.get(pk=article['click_count']) for article in browse_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+2018-01-12 17:03:07,036 [Thread-3:6892] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 17:03:19,871 [Thread-5:4380] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 17:04:19,364 [Thread-18:9296] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-12 17:04:49,051 [Thread-20:2308] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-12 17:12:32,743 [Thread-2:8472] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 37, in global_setting
+    article_recommend_list =  [Article.objects.get(pk=article['is_recommend']) for article in recommend_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+2018-01-12 17:12:34,338 [Thread-3:8064] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 37, in global_setting
+    article_recommend_list =  [Article.objects.get(pk=article['is_recommend']) for article in recommend_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+2018-01-12 17:12:40,029 [Thread-4:10196] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /archive/
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 62, in archive
+    return render(request, 'archive.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 37, in global_setting
+    article_recommend_list =  [Article.objects.get(pk=article['is_recommend']) for article in recommend_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+2018-01-12 17:22:51,944 [Thread-2:8988] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 37, in global_setting
+    article_recommend_list =  [Article.objects.get(pk=article['is_recommend']) for article in recommend_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 162, in __iter__
+    self._fetch_all()
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 1085, in iterator
+    for row in self.query.get_compiler(self.db).results_iter():
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 794, in results_iter
+    results = self.execute_sql(MULTI)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 829, in execute_sql
+    sql, params = self.as_sql()
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 378, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 49, in pre_sql_setup
+    order_by = self.get_order_by()
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 286, in get_order_by
+    field, self.query.get_meta(), default_order=asc))
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 558, in find_ordering_name
+    field, targets, alias, joins, path, opts = self._setup_joins(pieces, opts, alias)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 591, in _setup_joins
+    pieces, opts, alias)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\query.py", line 1466, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\query.py", line 1391, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'is_recommend_count' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, recommend_count, tag, title, user, user_id
+2018-01-12 17:22:53,516 [Thread-3:9604] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 37, in global_setting
+    article_recommend_list =  [Article.objects.get(pk=article['is_recommend']) for article in recommend_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 162, in __iter__
+    self._fetch_all()
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 1085, in iterator
+    for row in self.query.get_compiler(self.db).results_iter():
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 794, in results_iter
+    results = self.execute_sql(MULTI)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 829, in execute_sql
+    sql, params = self.as_sql()
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 378, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 49, in pre_sql_setup
+    order_by = self.get_order_by()
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 286, in get_order_by
+    field, self.query.get_meta(), default_order=asc))
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 558, in find_ordering_name
+    field, targets, alias, joins, path, opts = self._setup_joins(pieces, opts, alias)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 591, in _setup_joins
+    pieces, opts, alias)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\query.py", line 1466, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\query.py", line 1391, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'is_recommend_count' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, recommend_count, tag, title, user, user_id
+2018-01-12 17:23:57,631 [Thread-2:10024] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 31, in global_setting
+    article_browse_list =  [Article.objects.get(pk=article['click_count']) for article in browse_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+2018-01-12 17:24:18,596 [Thread-2:9692] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 37, in global_setting
+    article_recommend_list =  [Article.objects.get(pk=article['is_recommend']) for article in recommend_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 162, in __iter__
+    self._fetch_all()
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 1085, in iterator
+    for row in self.query.get_compiler(self.db).results_iter():
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 794, in results_iter
+    results = self.execute_sql(MULTI)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 829, in execute_sql
+    sql, params = self.as_sql()
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 378, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 49, in pre_sql_setup
+    order_by = self.get_order_by()
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 286, in get_order_by
+    field, self.query.get_meta(), default_order=asc))
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 558, in find_ordering_name
+    field, targets, alias, joins, path, opts = self._setup_joins(pieces, opts, alias)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 591, in _setup_joins
+    pieces, opts, alias)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\query.py", line 1466, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\query.py", line 1391, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'is_recommend_count' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, recommend_count, tag, title, user, user_id
+2018-01-12 17:24:21,831 [Thread-3:10040] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 37, in global_setting
+    article_recommend_list =  [Article.objects.get(pk=article['is_recommend']) for article in recommend_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 162, in __iter__
+    self._fetch_all()
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 1085, in iterator
+    for row in self.query.get_compiler(self.db).results_iter():
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 794, in results_iter
+    results = self.execute_sql(MULTI)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 829, in execute_sql
+    sql, params = self.as_sql()
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 378, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 49, in pre_sql_setup
+    order_by = self.get_order_by()
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 286, in get_order_by
+    field, self.query.get_meta(), default_order=asc))
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 558, in find_ordering_name
+    field, targets, alias, joins, path, opts = self._setup_joins(pieces, opts, alias)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 591, in _setup_joins
+    pieces, opts, alias)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\query.py", line 1466, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\query.py", line 1391, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'is_recommend_count' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, recommend_count, tag, title, user, user_id
+2018-01-12 17:24:49,915 [Thread-2:7280] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 37, in global_setting
+    article_recommend_list =  [Article.objects.get(pk=article['is_recommend']) for article in recommend_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+2018-01-12 17:24:51,381 [Thread-3:10120] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 37, in global_setting
+    article_recommend_list =  [Article.objects.get(pk=article['is_recommend']) for article in recommend_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+2018-01-12 17:27:09,595 [Thread-2:5468] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 31, in global_setting
+    article_browse_list =  [Article.objects.get(pk=article['click_count']) for article in browse_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+2018-01-12 17:27:10,888 [Thread-3:5796] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 31, in global_setting
+    article_browse_list =  [Article.objects.get(pk=article['click_count']) for article in browse_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+2018-01-12 17:28:40,746 [Thread-2:8384] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 31, in global_setting
+    article_browse_list =  [Article.objects.get(pk=article['click_count']) for article in browse_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+2018-01-12 17:31:21,740 [Thread-2:7340] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 31, in global_setting
+    article_browse_list =  [Article.objects.get(pk=pk) for article in browse_count_list]
+NameError: global name 'pk' is not defined
+2018-01-12 17:34:26,065 [Thread-2:3448] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 31
+    article_browse_list =  [Article.objects.get(article, pk=) for article in browse_count_list]
+                                                            ^
+SyntaxError: invalid syntax
+2018-01-12 17:34:27,470 [Thread-3:9000] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 31
+    article_browse_list =  [Article.objects.get(article, pk=) for article in browse_count_list]
+                                                            ^
+SyntaxError: invalid syntax
+2018-01-12 17:35:06,864 [Thread-6:8628] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 17:48:51,862 [Thread-2:3968] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 31
+    article_browse_list =  [Article.objects.get(pk=) for article in browse_count_list]
+                                                   ^
+SyntaxError: invalid syntax
+2018-01-12 17:48:57,739 [Thread-3:8856] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 31
+    article_browse_list =  [Article.objects.get(pk=) for article in browse_count_list]
+                                                   ^
+SyntaxError: invalid syntax
+2018-01-12 17:48:59,394 [Thread-4:8848] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 31
+    article_browse_list =  [Article.objects.get(pk=) for article in browse_count_list]
+                                                   ^
+SyntaxError: invalid syntax
+2018-01-12 17:49:00,072 [Thread-5:10068] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 31
+    article_browse_list =  [Article.objects.get(pk=) for article in browse_count_list]
+                                                   ^
+SyntaxError: invalid syntax
+2018-01-12 17:49:00,694 [Thread-6:1600] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 31
+    article_browse_list =  [Article.objects.get(pk=) for article in browse_count_list]
+                                                   ^
+SyntaxError: invalid syntax
+2018-01-12 17:49:12,130 [Thread-10:9044] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 31
+    article_browse_list =  [Article.objects.get(pk=) for article in browse_count_list]
+                                                   ^
+SyntaxError: invalid syntax
+2018-01-12 17:49:31,263 [Thread-13:9660] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\middleware\common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 647, in is_valid_path
+    resolve(path, urlconf)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 522, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 31
+    article_browse_list =  [Article.objects.get(pk=) for article in browse_count_list]
+                                                   ^
+SyntaxError: invalid syntax
+2018-01-12 17:49:33,247 [Thread-14:9536] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 31
+    article_browse_list =  [Article.objects.get(pk=) for article in browse_count_list]
+                                                   ^
+SyntaxError: invalid syntax
+2018-01-12 17:50:01,213 [Thread-15:7340] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 31
+    article_browse_list =  [Article.objects.get(pk=) for article in browse_count_list]
+                                                   ^
+SyntaxError: invalid syntax
+2018-01-12 17:50:02,520 [Thread-16:6716] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 31
+    article_browse_list =  [Article.objects.get(pk=) for article in browse_count_list]
+                                                   ^
+SyntaxError: invalid syntax
+2018-01-12 17:50:03,680 [Thread-17:8776] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 31
+    article_browse_list =  [Article.objects.get(pk=) for article in browse_count_list]
+                                                   ^
+SyntaxError: invalid syntax
+2018-01-12 17:50:08,605 [Thread-18:9228] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "D:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "D:\workspace\blog_project\blog\views.py", line 31
+    article_browse_list =  [Article.objects.get(pk=) for article in browse_count_list]
+                                                   ^
+SyntaxError: invalid syntax
+2018-01-12 17:50:22,240 [Thread-20:4208] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 17:50:23,486 [Thread-22:5892] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 17:51:45,197 [Thread-28:10220] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
