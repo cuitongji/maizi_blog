@@ -5883,3 +5883,828 @@ SyntaxError: invalid syntax
 2018-01-12 17:50:22,240 [Thread-20:4208] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
 2018-01-12 17:50:23,486 [Thread-22:5892] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
 2018-01-12 17:51:45,197 [Thread-28:10220] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-12 23:59:22,204 [Thread-2:10316] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-12 23:59:23,519 [Thread-4:11188] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 09:41:08,828 [Thread-2:3096] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-13 09:41:10,078 [Thread-3:4392] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\workspace\blog_project\blog\views.py", line 24, in global_setting
+    archive_list = Article.objects.distinct_date()
+  File "D:\workspace\blog_project\blog\models.py", line 52, in distinct_date
+    for date in date_list:
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 162, in __iter__
+    self._fetch_all()
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 1085, in iterator
+    for row in self.query.get_compiler(self.db).results_iter():
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 794, in results_iter
+    results = self.execute_sql(MULTI)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blogdb.blog_article' doesn't exist")
+2018-01-13 09:41:10,901 [Thread-4:1348] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-13 09:51:00,885 [Thread-3:6456] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 09:51:01,046 [Thread-4:6872] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 09:51:02,700 [Thread-6:4616] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 10:22:01,671 [Thread-31:7088] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-13 10:22:03,332 [Thread-33:7100] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 11:26:35,197 [Thread-37:7972] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-13 12:24:36,325 [Thread-56:3300] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 12:24:37,641 [Thread-58:6104] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 12:24:39,795 [Thread-60:5916] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 12:24:41,380 [Thread-62:4720] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 12:24:44,703 [Thread-64:7380] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-01-13 12:24:51,188 [Thread-66:5980] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 13:01:39,000 [Thread-68:4596] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-13 13:02:15,558 [Thread-72:3304] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-01-13 13:19:46,661 [Thread-73:5492] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/index.html
+2018-01-13 15:10:27,681 [Thread-2:3568] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 114, in article
+    return render(request, 'article.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "d:\workspace\blog_project\blog\views.py", line 37, in global_setting
+    article_recommend_list =  [Article.objects.get(pk=article['is_recommend']) for article in recommend_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+2018-01-13 15:10:32,690 [Thread-3:3756] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-13 15:10:33,062 [Thread-4:9196] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "d:\workspace\blog_project\blog\views.py", line 37, in global_setting
+    article_recommend_list =  [Article.objects.get(pk=article['is_recommend']) for article in recommend_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+2018-01-13 15:10:40,167 [Thread-8:8612] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "d:\workspace\blog_project\blog\views.py", line 37, in global_setting
+    article_recommend_list =  [Article.objects.get(pk=article['is_recommend']) for article in recommend_count_list]
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Article matching query does not exist.
+2018-01-13 15:13:49,678 [Thread-3:9112] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:14:16,605 [Thread-3:8752] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:15:55,043 [Thread-3:7572] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:15:56,453 [Thread-5:6200] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:17:54,713 [Thread-3:5484] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:17:56,010 [Thread-5:8120] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:17:59,892 [Thread-7:5836] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:19:31,023 [Thread-11:7756] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:19:32,181 [Thread-13:6880] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:21:27,375 [Thread-2:1036] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "d:\workspace\blog_project\blog\views.py", line 32, in global_setting
+    article_browse_list =  Article.objects.filter(click_count>0).order_by('click_count')
+NameError: global name 'click_count' is not defined
+2018-01-13 15:22:46,987 [Thread-3:6040] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:22:48,384 [Thread-5:6400] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:23:25,187 [Thread-2:1952] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "d:\workspace\blog_project\blog\views.py", line 32, in global_setting
+    article_browse_list =  Article.objects.filter(click_count__gt(0)).order_by('click_count')
+NameError: global name 'click_count__gt' is not defined
+2018-01-13 15:23:25,780 [Thread-3:8464] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "d:\workspace\blog_project\blog\views.py", line 32, in global_setting
+    article_browse_list =  Article.objects.filter(click_count__gt(0)).order_by('click_count')
+NameError: global name 'click_count__gt' is not defined
+2018-01-13 15:23:27,226 [Thread-4:6560] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "d:\workspace\blog_project\blog\views.py", line 32, in global_setting
+    article_browse_list =  Article.objects.filter(click_count__gt(0)).order_by('click_count')
+NameError: global name 'click_count__gt' is not defined
+2018-01-13 15:23:55,661 [Thread-2:5776] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "d:\workspace\blog_project\blog\views.py", line 32, in global_setting
+    article_browse_list =  Article.objects.filter(click_count_gt(0)).order_by('click_count')
+NameError: global name 'click_count_gt' is not defined
+2018-01-13 15:23:57,186 [Thread-3:7476] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "d:\workspace\blog_project\blog\views.py", line 32, in global_setting
+    article_browse_list =  Article.objects.filter(click_count_gt(0)).order_by('click_count')
+NameError: global name 'click_count_gt' is not defined
+2018-01-13 15:23:58,252 [Thread-4:6640] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "d:\workspace\blog_project\blog\views.py", line 32, in global_setting
+    article_browse_list =  Article.objects.filter(click_count_gt(0)).order_by('click_count')
+NameError: global name 'click_count_gt' is not defined
+2018-01-13 15:26:09,946 [Thread-2:7748] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "d:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "d:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "d:\workspace\blog_project\blog\views.py", line 32
+    article_browse_list =  Article.objects.filter(click_count__gt=1.order_by('click_count')
+                                                                           ^
+SyntaxError: invalid syntax
+2018-01-13 15:26:11,240 [Thread-3:3996] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "d:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "d:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "d:\workspace\blog_project\blog\views.py", line 32
+    article_browse_list =  Article.objects.filter(click_count__gt=1.order_by('click_count')
+                                                                           ^
+SyntaxError: invalid syntax
+2018-01-13 15:26:13,249 [Thread-4:6088] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "d:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "d:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "d:\workspace\blog_project\blog\views.py", line 32
+    article_browse_list =  Article.objects.filter(click_count__gt=1.order_by('click_count')
+                                                                           ^
+SyntaxError: invalid syntax
+2018-01-13 15:26:14,302 [Thread-5:5528] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "d:\workspace\blog_project\blog_project\urls.py", line 27, in <module>
+    url(r'^', include('blog.urls')),
+  File "D:\workspace\maiziblog\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "d:\workspace\blog_project\blog\urls.py", line 2, in <module>
+    from blog.views import *
+  File "d:\workspace\blog_project\blog\views.py", line 32
+    article_browse_list =  Article.objects.filter(click_count__gt=1.order_by('click_count')
+                                                                           ^
+SyntaxError: invalid syntax
+2018-01-13 15:26:29,072 [Thread-8:4920] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:27:11,907 [Thread-3:4648] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:27:13,334 [Thread-5:7596] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:28:32,082 [Thread-3:1280] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:30:03,368 [Thread-9:8328] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:31:51,259 [Thread-3:4884] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:31:52,486 [Thread-5:7176] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:32:26,888 [Thread-3:7368] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:35:57,042 [Thread-3:4892] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:35:58,388 [Thread-5:6044] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:36:25,372 [Thread-11:8872] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:36:27,753 [Thread-13:6944] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:36:40,634 [Thread-18:8308] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:36:42,148 [Thread-20:8576] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:37:22,691 [Thread-26:7700] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:38:11,693 [Thread-32:7556] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:38:15,691 [Thread-34:7960] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:38:20,512 [Thread-36:1068] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:38:21,267 [Thread-38:9120] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:42:43,267 [Thread-42:3956] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:42:44,834 [Thread-44:6972] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:42:46,088 [Thread-46:7996] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:46:11,282 [Thread-3:9112] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:47:15,036 [Thread-6:2200] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:47:16,355 [Thread-8:4572] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:47:31,125 [Thread-11:9084] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:47:37,993 [Thread-13:8408] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:47:42,638 [Thread-15:4472] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:53:25,144 [Thread-17:6712] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:53:26,351 [Thread-19:8260] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:53:28,375 [Thread-20:8464] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.baidu.com
+2018-01-13 15:54:11,105 [Thread-21:1116] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.baidu.com
+2018-01-13 15:54:12,526 [Thread-22:1252] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.baidu.com
+2018-01-13 15:54:13,398 [Thread-23:6400] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:54:15,359 [Thread-24:8220] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 113, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 110, in get_parent
+    return context.template.engine.get_template(parent)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 317, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 639, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: '[:4]' from 'link.callback_url[:4]'
+2018-01-13 15:56:56,611 [Thread-26:6880] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:56:57,931 [Thread-28:6588] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:56:58,785 [Thread-30:8788] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:57:00,381 [Thread-31:8208] [django.request:170] [base:get_response] [WARNING]- Not Found: /link.callback_url[:4]
+2018-01-13 15:57:29,588 [Thread-32:7748] [django.request:170] [base:get_response] [WARNING]- Not Found: /link.callback_url[:4]
+2018-01-13 15:57:30,523 [Thread-33:6640] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:57:31,740 [Thread-35:8860] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:57:32,690 [Thread-37:7700] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:57:33,982 [Thread-38:6628] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.baidu.com.[:4]
+2018-01-13 15:59:37,816 [Thread-39:5148] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:59:38,773 [Thread-41:6816] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:59:39,868 [Thread-43:6696] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 15:59:41,039 [Thread-44:8752] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.baidu.com.[0:4]
+2018-01-13 16:02:59,963 [Thread-45:7572] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 16:03:00,851 [Thread-47:7132] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 16:03:04,046 [Thread-48:6888] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.baidu.com
+2018-01-13 16:03:07,849 [Thread-49:5756] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 16:04:15,621 [Thread-51:7876] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 113, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 110, in get_parent
+    return context.template.engine.get_template(parent)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 317, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 639, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: 'link.callback_url' from ''\b\b\b\b/b/b/b/b'link.callback_url'
+2018-01-13 16:04:33,036 [Thread-53:6748] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 113, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 110, in get_parent
+    return context.template.engine.get_template(parent)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 317, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 639, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: 'link.callback_url' from ''\b\b\b\b'link.callback_url'
+2018-01-13 16:04:34,381 [Thread-54:7876] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 113, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 110, in get_parent
+    return context.template.engine.get_template(parent)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 317, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 639, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: 'link.callback_url' from ''\b\b\b\b'link.callback_url'
+2018-01-13 16:04:48,427 [Thread-56:2052] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 113, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 110, in get_parent
+    return context.template.engine.get_template(parent)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 317, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 639, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: 'link.callback_url' from ''/b'link.callback_url'
+2018-01-13 16:04:49,901 [Thread-57:6432] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 113, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 110, in get_parent
+    return context.template.engine.get_template(parent)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 317, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 639, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: 'link.callback_url' from ''/b'link.callback_url'
+2018-01-13 16:05:03,341 [Thread-59:8700] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 113, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 110, in get_parent
+    return context.template.engine.get_template(parent)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 317, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 639, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: '/blink.callback_url' from '/blink.callback_url'
+2018-01-13 16:05:05,351 [Thread-60:1044] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\workspace\maiziblog\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\workspace\blog_project\blog\views.py", line 50, in index
+    return render(request, 'index.html', locals())
+  File "D:\workspace\maiziblog\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 113, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loader_tags.py", line 110, in get_parent
+    return context.template.engine.get_template(parent)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 317, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\workspace\maiziblog\lib\site-packages\django\template\base.py", line 639, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: '/blink.callback_url' from '/blink.callback_url'
+2018-01-13 16:31:13,305 [Thread-63:9436] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-01-13 16:31:31,338 [Thread-64:9704] [django.request:170] [base:get_response] [WARNING]- Not Found: /index.html

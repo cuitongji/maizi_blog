@@ -24,17 +24,17 @@ def global_setting(request):
     archive_list = Article.objects.distinct_date()
     # 广告数据(同学们自己完成)
     # 标签云数据
+    tag_list = Tag.objects.all()
     # 友情链接数据
+    link_list = Links.objects.all()
     # 文章排行榜
     # 浏览排行
-    browse_count_list = Article.objects.values('click_count').annotate(browse_count = Count('click_count')).order_by('-browse_count')
-    # article_browse_list =  [Article.objects.get(pk=) for article in browse_count_list]
+    article_browse_list =  Article.objects.filter(click_count__gt=1).order_by('-click_count')[:6]
     # 评论排行
-    comment_count_list = Comment.objects.values('article').annotate(comment_count = Count('article')).order_by('-comment_count')
+    comment_count_list = Comment.objects.values('article').annotate(comment_count = Count('article')).order_by('-comment_count')[:6]
     article_comment_list =  [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
     # 站长推荐
-    # recommend_count_list = Article.objects.values('is_recommend').annotate(recommend_count = Count('is_recommend')).order_by('-recommend_count')
-    # article_recommend_list =  [Article.objects.get(pk=article['is_recommend']) for article in recommend_count_list]
+    article_recommend_list = Article.objects.filter(is_recommend='1').order_by('-date_publish')[:6]
     return locals()
 
 def index(request):
@@ -72,7 +72,7 @@ def tag(request):
 
 # 分页代码
 def getPage(request, article_list):
-    paginator = Paginator(article_list, 2)
+    paginator = Paginator(article_list, 4)
     try:
         page = int(request.GET.get('page', 1))
         article_list = paginator.page(page)

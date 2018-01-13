@@ -354,3 +354,5 @@
 2018-01-12 00:49:00,000 [Thread-32:14188] [blog.views:107] [views:article] [ERROR]- global name 'CommentForm' is not defined
 2018-01-12 00:49:02,062 [Thread-33:13472] [blog.views:107] [views:article] [ERROR]- global name 'CommentForm' is not defined
 2018-01-12 00:49:13,832 [Thread-37:10556] [blog.views:107] [views:article] [ERROR]- global name 'CommentForm' is not defined
+2018-01-13 09:41:10,029 [Thread-3:4392] [blog.views:49] [views:index] [ERROR]- (1146, "Table 'blogdb.blog_article' doesn't exist")
+2018-01-13 13:02:15,388 [Thread-70:5892] [blog.views:131] [views:comment_post] [ERROR]- 'content'
